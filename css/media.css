@@ -1,0 +1,836 @@
+@media screen and (max-width: 1320px) {
+  .companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .companies img:last-child {
+    margin-top: 0;
+  }
+
+
+  .history-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+  }
+}
+
+
+@media screen and (max-width:1200px) {
+
+
+
+  .help-information {
+    max-width: 350px;
+  }
+
+  .help-cards article {
+    padding: 30px 20px 30px;
+    max-width: 308px;
+  }
+
+  .help-cards article div {
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .help-cards article div img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .help-cards article h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .help-cards article p {
+    font-size: 16px;
+  }
+
+
+
+
+  .reviews .swiper {
+    margin-left: 47px;
+    margin-top: 24px;
+  }
+
+  .reviews .swiper-slide p {
+    margin-bottom: 50px;
+  }
+
+  .swiper-pagination {
+    gap: 16px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+
+  .block-reviewers {
+    max-height: 260px;
+    margin-left: 38px;
+  }
+
+
+  .footer-navigation {
+    gap: 40px;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    margin: 0 70px;
+  }
+
+  .header-desktop nav ul {
+    gap: 30px;
+  }
+
+
+  .main {
+    margin-left: 70px;
+  }
+
+  .main-information h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .main-information p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .main-information button {
+    color: #FFF;
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+
+
+  .clients {
+    margin: 136px 70px 94px;
+  }
+
+  .clients-information h2 {
+    font-size: 30px;
+  }
+
+  .clients-information p {
+    font-size: 16px;
+  }
+
+
+  .help {
+    margin: 0 70px;
+  }
+
+  .help-information h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .help-information {
+    max-width: 300px;
+  }
+
+
+  .history {
+    margin: 60px 70px 0;
+  }
+
+  .history-information {
+    min-width: 300px;
+  }
+
+  .history-information h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .history-information p {
+    font-size: 16px;
+  }
+
+
+
+  .reviews {
+    margin: 117px 70px 0;
+  }
+
+  .reviews-header h2 {
+    font-size: 30px;
+    margin-bottom: 17px;
+  }
+
+  .reviews-header p {
+    font-size: 16px;
+    margin-bottom: 113px;
+  }
+
+
+
+  .subscribe {
+    margin: 92px 70px 107px;
+  }
+
+  .subscribe-information {
+    margin-left: 52px;
+  }
+
+  .subscribe-information h2 {
+    font-size: 30px;
+    margin-bottom: 17px;
+  }
+
+  .subscribe-information p {
+    font-size: 16px;
+  }
+
+
+  /* .subscribe-form-wrapper {
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 140%;
+    min-height: 292px;
+    position: relative; */
+  /* background-size: contain;
+    background: url('../images/Rectangle\ 31.png') no-repeat; */
+  /* } */
+
+  /* .subscribe-form-wrapper svg {
+    min-height: 292px;
+  }
+
+  .subscribe-form-wrapper form {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: -60px;
+    width: 110%;
+    height: 80px;
+    border-radius: 60px;
+    border: 1px solid #F1F1F1;
+    background: #FFF;
+    box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .subscribe-form-wrapper form button {
+    border: none;
+    padding: 1% 2%;
+    margin: 10px;
+    width: 100%;
+    border-radius: 60px;
+    background: #2639ED;
+    font-size: 16px;
+    letter-spacing: 1.04px;
+    color: #FFF;
+  } */
+
+
+
+
+  footer {
+    margin: 0 70px;
+  }
+}
+
+@media screen and (max-width: 964px) {
+
+
+  .footer-flex {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 26px;
+  }
+
+  .company-information {
+    order: 2;
+    width: 100%;
+  }
+
+  .footer-navigation {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 904px) {
+  .main {
+    margin: 0 70px 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main-information {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* margin-top: 123px; */
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    order: 2;
+  }
+
+  .main-information p {
+    text-align: left;
+  }
+
+  .main-photo img {
+    flex-shrink: 1;
+    width: 100%;
+    max-width: 754px;
+    max-height: 512px;
+    border-radius: 0px 0px 0px 0px;
+  }
+
+
+
+
+  .clients {
+    margin-top: 50px;
+  }
+
+  .clients-flex {
+    flex-direction: column;
+    gap: 60px;
+    /* justify-content: space-between; */
+  }
+
+  .clients-information {
+    text-align: center;
+    width: 100%;
+  }
+
+
+
+
+  .help-information {
+    max-width: 100%;
+  }
+
+  .help-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: relative;
+  }
+
+  .help-flex .dots1,
+  .help-flex .dots2 {
+    display: none;
+  }
+
+  .help-big-rectangle {
+    position: absolute;
+    right: -70px;
+    width: 110%;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    margin: 30% 0;
+    border-radius: 150px 0px 0px 0px;
+    background: #F4F9FF;
+  }
+
+
+  .history-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .history-photo {
+    position: relative;
+    max-width: 100%;
+    min-width: 350px;
+    max-height: 100%;
+    height: 100%;
+    order: 2;
+  }
+
+  .history-information {
+    width: 100%;
+    min-width: 350px;
+    margin-top: 0;
+  }
+
+
+
+  .reviews-flex {
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .reviews-main-photo {
+    width: 30%;
+  }
+
+  .reviews .swiper {
+    margin-left: 0;
+    margin-top: 0;
+    width: 70%;
+    /* width: 412px; */
+    height: 100%;
+  }
+
+  .block-reviewers {
+    display: none;
+  }
+
+
+
+
+
+  .subscribe-information {
+    width: 30%;
+  }
+
+  .subscribe-wrapper {
+    height: 252px;
+  }
+
+  .subscribe-form-wrapper {
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    max-width: 543px;
+  }
+
+  .subscribe-form-wrapper form {
+    left: -10%;
+    width: 100%;
+    height: 80px;
+  }
+
+  .subscribe-form-wrapper form input {
+    width: 60%;
+    margin: 2%;
+    border-radius: 60px;
+    padding: 1% 2%;
+    font-size: 14px;
+  }
+
+  .subscribe-form-wrapper form button {
+    padding: 1% 2%;
+    margin: 2%;
+    width: 40%;
+    font-size: 14px;
+  }
+
+
+
+  .company-information .social-media {
+    justify-content: center;
+  }
+
+
+}
+
+
+@media screen and (max-width: 778px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+
+  .main-photo svg {
+    width: 15%;
+    top: -7.5%;
+    left: -7.5%;
+  }
+
+  .main-rectangle {
+    bottom: -30%;
+    right: 20%;
+    width: 30%;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width:674px) {
+  .footer-navigation {
+    display: none;
+  }
+
+  .company-information .logo {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .company-information p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .faq-wrapper {
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+
+  /* .faq-item {
+    margin-bottom: 1rem;
+  } */
+
+  .faq-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 20px;
+  }
+
+  .faq-title::after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url('../images/arrow.svg');
+    transform: rotate(-90deg);
+  }
+
+  .faq-item.active .faq-title::after {
+    transform: rotate(0deg);
+  }
+
+  .faq-text {
+    list-style: none;
+    height: 0;
+    overflow: hidden;
+    font-size: 16px;
+  }
+
+  .faq-text li {
+    padding-bottom: 10px;
+  }
+
+  .faq-text a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .faq-item.active .faq-text {
+    height: initial;
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+}
+
+
+@media screen and (max-width: 732px) {
+  header {
+    margin: 0 30px;
+  }
+
+  .main {
+    margin: 0 30px;
+  }
+
+  .main-information .dots {
+    /* display: none; */
+    width: 25%;
+  }
+
+  .main-information .dots1 {
+    bottom: -15%;
+    left: 0;
+  }
+
+  .main-information .dots2 {
+    bottom: -15%;
+    left: 27%;
+  }
+
+  .clients {
+    margin: 56px 30px 94px;
+  }
+
+  .help {
+    margin: 0 30px;
+  }
+
+  .help-information_header .help-rectangle {
+    top: -8vw;
+    left: -4%;
+    width: 23%;
+    height: 20vw;
+  }
+
+  .help-big-rectangle {
+    z-index: -3;
+  }
+
+  .help-cards .chart .circle {
+    width: 30%;
+    bottom: -16%;
+    right: -8%;
+    z-index: -2;
+  }
+
+  .history {
+    margin: 56px 30px 0;
+  }
+
+  .history-flex {
+    gap: 40px;
+  }
+
+  .history-information_header .history-rectangle {
+    top: -5vw;
+    left: -4%;
+    width: 23%;
+    height: 20vw;
+  }
+
+  .history-photo>svg {
+    width: 20%;
+    right: -7%;
+    bottom: -15%;
+  }
+
+
+  .reviews {
+    margin: 56px 30px 0;
+  }
+
+  .reviews-flex {
+    margin-top: -50px;
+  }
+
+  .reviews-main-photo .dots {
+    position: absolute;
+    width: 50%;
+    right: -12%;
+    top: -15%;
+    z-index: -1;
+  }
+
+  .reviews-main-photo .ellipse {
+    position: absolute;
+    width: 40%;
+    left: -5%;
+    bottom: -20%;
+    z-index: -1;
+  }
+
+
+
+
+
+  .subscribe {
+    margin: 92px 30px 107px;
+  }
+
+  /* .subscribe-wrapper {
+    height: 230px;
+  } */
+
+  .subscribe-wrapper .dots {
+    width: 30%;
+    top: -10%;
+    right: -2%;
+  }
+
+  .subscribe-rectangle {
+    width: 30%;
+    height: 50%;
+    bottom: -10%;
+    left: -5%;
+  }
+
+
+  footer {
+    margin: 0 30px;
+  }
+}
+
+
+@media screen and (max-width: 654px) {
+
+  .subscribe {
+    margin: 40px 30px 160px;
+  }
+
+  .subscribe-cover {
+    display: block;
+  }
+
+
+  .subscribe-wrapper {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* height: 292px; */
+    border-radius: 75px;
+  }
+
+  .subscribe-information {
+    margin-left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .subscribe-form-wrapper {
+    width: 90%;
+    background: none;
+  }
+
+
+  .subscribe-rectangle {
+    display: none;
+  }
+
+  .subscribe-wrapper .dots {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 572px) {
+  .reviews-main-photo .ellipse {
+    position: absolute;
+    width: 40%;
+    left: -10%;
+    bottom: -25%;
+    z-index: -1;
+  }
+
+  .subscribe-form-wrapper form {
+    height: 25%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .help-cards article {
+    padding: 20px 10px;
+  }
+
+  .help-cards article div {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+
+  .help-cards article h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .help-cards article p {
+    font-size: 14px;
+  }
+
+
+  .reviews-flex {
+    flex-direction: column;
+  }
+
+  .reviews-main-photo {
+    width: 35%;
+  }
+
+  .reviews .swiper {
+    width: 100%;
+    text-align: center;
+  }
+
+  .swiper-pagination {
+    gap: 16px;
+    justify-content: center;
+  }
+
+}
+
+
+@media screen and (max-width: 420px) {
+  .header-desktop {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .help-flex {
+    gap: 20px;
+  }
+
+  .help-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .help-cards article {
+    padding: 39px 32px 47px;
+  }
+
+  .help-cards article div {
+    width: 121px;
+    height: 121px;
+    margin-bottom: 20px;
+  }
+
+  .help-cards article h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .help-cards article p {
+    font-size: 16px;
+  }
+
+  .help-big-rectangle {
+    display: none;
+  }
+
+  .subscribe-wrapper {
+    margin-bottom: -20px;
+  }
+
+  .subscribe-information {
+    margin-bottom: -20px;
+  }
+
+}
+
+@media screen and (max-width: 414px) {
+  .subscribe-form-wrapper form {
+    height: 20%;
+  }
+
+  .subscribe-form-wrapper form input {
+    font-size: 12px;
+  }
+
+  .subscribe-form-wrapper form button {
+    font-size: 12px;
+  }
+}
