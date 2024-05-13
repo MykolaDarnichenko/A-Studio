@@ -20,7 +20,10 @@ body {
 }
 
 header {
-  margin: 0 110px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: #fff;
 }
 
 
@@ -105,8 +108,8 @@ header {
 
 
 .header-desktop {
-  margin-top: 42px;
-  margin-bottom: 40px;
+  max-width: 1420px;
+  padding: 20px 110px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -516,6 +519,7 @@ header {
 }
 
 .reviews-main-photo {
+  margin: 4%;
   position: relative;
   width: fit-content;
   height: fit-content;
@@ -545,12 +549,15 @@ header {
 } */
 
 .reviews-main-photo .main-reviewer {
-  width: 100%;
-  max-width: 389px;
-  max-height: 389px;
+  /* width: 100%; */
+  width: 189px;
+  min-width: 100%;
+  height: 189px;
   object-fit: cover;
-  border-radius: 500px 0px 500px 500px;
-  box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+  /* border-radius: 500px 0px 500px 500px; */
+  border-radius: 50% 0 50% 50%;
+
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.15);
 }
 
 .reviews-main-photo .dots {
@@ -578,9 +585,17 @@ header {
 .reviews .swiper {
   margin-left: 67px;
   margin-top: 44px;
-  width: 412px;
+  width: 800px;
   height: 100%;
 }
+
+
+.reviews .swiper-slide {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
 
 .reviews .swiper-slide h2 {
   font-size: 24px;
@@ -603,7 +618,8 @@ header {
 .swiper-pagination {
   display: flex;
   gap: 26px;
-  justify-content: left;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .swiper-pagination-bullet {
