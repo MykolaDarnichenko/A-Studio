@@ -777,6 +777,18 @@
     margin-bottom: 20px;
   }
 
+
+
+  .history-photo {
+    min-width: none;
+  }
+
+  .history-information {
+    min-width: none;
+  }
+
+
+
   .help-flex {
     gap: 20px;
   }
@@ -818,6 +830,11 @@
   .subscribe-information {
     margin-bottom: -20px;
   }
+
+
+
+
+
 
 }
 
