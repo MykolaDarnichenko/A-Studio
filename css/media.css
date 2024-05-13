@@ -780,11 +780,11 @@
 
 
   .history-photo {
-    min-width: none;
+    min-width: 100%;
   }
 
   .history-information {
-    min-width: none;
+    min-width: 100%;
   }
 
 
