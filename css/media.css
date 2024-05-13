@@ -551,7 +551,7 @@
     font-size: 16px;
 
 
-    animation: height_zero .2s ease-out 0.00000001s;
+    animation: height_zero .2s ease 0.00000001s;
   }
 
   .faq-text li {
@@ -568,7 +568,7 @@
     padding-top: 10px;
     padding-left: 5px;
 
-    animation: height_initial .2s ease-in 0.00000001s;
+    animation: height_initial .2s ease 0.00000001s;
   }
 }
 
