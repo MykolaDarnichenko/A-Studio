@@ -2,6 +2,10 @@
   font-family: 'Averta';
   font-family: 'Proxima'; */
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +13,7 @@
 }
 
 body {
-  font-family: 'Averta';
+  font-family: "Averta";
   overflow-x: hidden;
 }
 
@@ -27,8 +31,6 @@ header {
 }
 
 
-
-.mobile-menu,
 .menu-btn {
   display: none;
 }
@@ -42,7 +44,7 @@ header {
 }
 
 .menu-btn span {
-  width: 25px;
+  width: 30px;
   height: 2px;
   position: absolute;
   top: 50%;
@@ -60,21 +62,23 @@ header {
   top: calc(50% + 5px);
 }
 
-
 .mobile-menu {
   border-bottom-left-radius: 30px;
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   right: 0;
   height: fit-content;
-  padding: 28px 20px 30px;
-  background: #FFF;
+  padding: 30px 20px 20px;
+  background: #fff;
   z-index: 2;
+  transition: all 0.4s ease;
+  right: -105%;
 }
 
 .mobile-menu.active {
-  transform: translateX(0);
+  /* transform: translateX(0); */
+  right: 0%;
 }
 
 .mobile-menu ul {
@@ -104,6 +108,66 @@ header {
   top: 50%;
   transform: translate(-50%, 0%) rotate(-45deg);
 }
+
+
+@keyframes height_initial {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: initial;
+  }
+}
+
+@keyframes height_zero {
+  0% {
+    height: initial;
+  }
+
+  100% {
+    height: 0;
+  }
+}
+
+
+.contact-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-text {
+  height: 0;
+  overflow: hidden;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  animation: height_zero .2s ease;
+}
+
+.contact-title:hover {
+  cursor: pointer;
+}
+
+.contact-title.active .contact-text {
+  height: initial;
+
+  animation: height_initial .2s ease;
+}
+
+.contact-text span {
+  font-size: 14px;
+  text-transform: none;
+}
+
+.contact-text img {
+  width: 22px;
+  height: 22px;
+}
+
+
 
 
 
@@ -138,6 +202,49 @@ header {
   text-transform: capitalize;
 }
 
+.header-desktop .contact-item {
+  position: relative;
+}
+
+.contact-email {
+  display: none;
+  position: absolute;
+  width: fit-content;
+  height: 70px;
+  top: 0;
+  left: -100%;
+}
+
+.contact-email>div {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  background: #fff;
+  padding: 10px;
+}
+
+.contact-email>div img {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-email>div a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-email>div a>span {
+  text-transform: none;
+  font-size: 14px;
+}
+
+.header-desktop .contact-item:hover .contact-email {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
 
 
 .main {
@@ -173,12 +280,12 @@ header {
 }
 
 .main-information button {
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   letter-spacing: 1.3px;
   padding: 20px 40px;
   border-radius: 60px;
-  background: #2639ED;
+  background: #2639ed;
   border: none;
 }
 
@@ -228,11 +335,9 @@ header {
   width: 178px;
   height: 178px;
   border-radius: 0px 0px 100px 0px;
-  background: #FFF5DB;
+  background: #fff5db;
   z-index: -1;
 }
-
-
 
 .clients {
   margin: 136px 110px 94px;
@@ -268,8 +373,6 @@ header {
 .companies img:last-child {
   margin-top: 20px;
 }
-
-
 
 .help {
   margin: 0 110px;
@@ -330,7 +433,7 @@ header {
   width: 178px;
   height: 178px;
   border-radius: 110px 0 0 0;
-  background: #FFF5DB;
+  background: #fff5db;
 }
 
 .help-big-rectangle {
@@ -342,7 +445,7 @@ header {
   z-index: -2;
   margin: 17% 0;
   border-radius: 150px 0px 0px 0px;
-  background: #F4F9FF;
+  background: #f4f9ff;
 }
 
 .help-cards {
@@ -401,8 +504,8 @@ header {
   padding: 39px 32px 57px;
   max-width: 308px;
   border-radius: 40px;
-  border: 1px solid #F2F2F2;
-  background: #FFF;
+  border: 1px solid #f2f2f2;
+  background: #fff;
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -413,7 +516,7 @@ header {
   width: 121px;
   height: 121px;
   border-radius: 20px;
-  background: #F1F7FF;
+  background: #f1f7ff;
   margin-bottom: 31px;
 }
 
@@ -427,9 +530,6 @@ header {
   font-size: 16px;
   line-height: 140%;
 }
-
-
-
 
 .history {
   margin: 100px 110px 0;
@@ -452,8 +552,8 @@ header {
 .history-photo>img {
   width: 100%;
   border-radius: 40px;
-  border: 1px solid #F2F2F2;
-  background: #FFF;
+  border: 1px solid #f2f2f2;
+  background: #fff;
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -489,14 +589,12 @@ header {
   width: 178px;
   height: 178px;
   border-radius: 0px 0px 100px 0px;
-  background: #EFF1FF;
+  background: #eff1ff;
   z-index: -1;
   position: absolute;
   top: -24px;
   left: -38px;
 }
-
-
 
 .reviews {
   margin: 117px 110px 0;
@@ -576,7 +674,6 @@ header {
   z-index: -1;
 }
 
-
 .reviews-flex {
   display: flex;
   justify-content: space-between;
@@ -589,13 +686,11 @@ header {
   height: 100%;
 }
 
-
 .reviews .swiper-slide {
   gap: 10px;
   display: flex;
   align-items: center;
 }
-
 
 .reviews .swiper-slide h2 {
   font-size: 24px;
@@ -610,8 +705,8 @@ header {
 }
 
 :root {
-  --swiper-pagination-color: #2639ED;
-  --swiper-pagination-bullet-inactive-color: #E7F0FC;
+  --swiper-pagination-color: #2639ed;
+  --swiper-pagination-bullet-inactive-color: #e7f0fc;
   --swiper-pagination-bullet-inactive-opacity: 1;
 }
 
@@ -720,8 +815,6 @@ header {
   width: 52.87%;
 }
 
-
-
 .subscribe {
   margin: 92px 110px 107px;
 }
@@ -734,7 +827,7 @@ header {
   gap: 70px;
   height: 292px;
   border-radius: 75px;
-  background: #F4F9FF;
+  background: #f4f9ff;
 }
 
 .subscribe-cover {
@@ -763,7 +856,7 @@ header {
   width: 543px;
   height: 100%;
   position: relative;
-  background: #2639ED;
+  background: #2639ed;
   border-radius: 120px 75px 75px 155px;
   /* background-size: contain;
   background: url('../images/Rectangle\ 31.png') no-repeat; */
@@ -777,8 +870,8 @@ header {
   width: 479px;
   height: 80px;
   border-radius: 60px;
-  border: 1px solid #F1F1F1;
-  background: #FFF;
+  border: 1px solid #f1f1f1;
+  background: #fff;
   box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -799,10 +892,10 @@ header {
   padding: 20px 40px;
   margin: 10px;
   border-radius: 60px;
-  background: #2639ED;
+  background: #2639ed;
   font-size: 16px;
   letter-spacing: 1.04px;
-  color: #FFF;
+  color: #fff;
 }
 
 .subscribe-form-wrapper form button:hover {
@@ -813,7 +906,7 @@ header {
   width: 178px;
   height: 178px;
   border-radius: 0px 0px 0px 100px;
-  background: #FFF5DB;
+  background: #fff5db;
   position: absolute;
   bottom: -38px;
   left: -38px;
@@ -827,13 +920,12 @@ header {
   z-index: -1;
 }
 
-
 footer::before {
   content: "";
   display: block;
   width: 100%;
   height: 1px;
-  background: #E4E4E4;
+  background: #e4e4e4;
 }
 
 .footer-flex {
@@ -893,7 +985,7 @@ footer {
   text-decoration: none;
   color: #000;
   text-transform: capitalize;
-  font-family: 'Averta';
+  font-family: "Averta";
   font-size: 14px;
   line-height: 200%;
 }
@@ -903,7 +995,7 @@ footer {
 }
 
 .copyright {
-  color: #A4A4A4;
+  color: #a4a4a4;
   font-size: 14px;
   line-height: 160%;
   text-align: center;
